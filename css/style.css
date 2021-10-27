@@ -1,0 +1,401 @@
+.nav-item:hover {
+  background-color: #dbb078;
+  font-weight: bolder;
+}
+
+.explicativo {
+  text-align: justify;
+  line-height: 2rem;
+}
+
+section.fotoPrincipal {
+  width: 100%;
+  height: 700px;
+  background-image: url(../media/conejito.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "p1 logo p2" "titulo titulo titulo" "p3 p3 p3" "p4 p4 p4";
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 2fr 0.5fr 0.5fr;
+      grid-template-rows: 1fr 2fr 0.5fr 0.5fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+section.fotoPrincipal .fotoPrincipal__titulo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: titulo;
+  color: white;
+  font-size: 10vw;
+  font-weight: bolder;
+}
+
+section.fotoPrincipal .fotoPrincipal__logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: logo;
+  width: 10vw;
+}
+
+section.fotoPrincipal .fotoPrincipal__p1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: p1;
+  color: white;
+  font-size: 2.5vw;
+  font-weight: bolder;
+  -ms-grid-column-align: right;
+      justify-self: right;
+}
+
+section.fotoPrincipal .fotoPrincipal__p2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: p2;
+  color: white;
+  font-size: 2.5vw;
+  font-weight: bolder;
+  -ms-grid-column-align: left;
+      justify-self: left;
+}
+
+section.fotoPrincipal .fotoPrincipal__p3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: p3;
+  color: white;
+  font-size: 1.5vw;
+  font-weight: bold;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+section.fotoPrincipal .fotoPrincipal__p4 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: p4;
+  color: white;
+  font-size: 1.5vw;
+  font-weight: bold;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+div.tablaProceso {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "etapa0" "etapa1" "etapa2" "etapa3";
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.tablaProceso .tablaProceso__etapa0 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: etapa0;
+}
+
+div.tablaProceso .tablaProceso__etapa1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: etapa1;
+}
+
+div.tablaProceso .tablaProceso__etapa2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: etapa2;
+}
+
+div.tablaProceso .tablaProceso__etapa3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: etapa3;
+}
+
+div.tablaProceso .tablaProceso__tr .tablaProceso__th {
+  background-color: #E8E4E1;
+  height: 2.5rem;
+  text-align: center;
+  border: solid black 0.1rem;
+}
+
+div.tablaProceso .tablaProceso__tr .tablaProceso__td ol {
+  padding-left: 1em;
+}
+
+div.tablaProceso .tablaProceso__tr .tablaProceso__td ul {
+  padding-left: 1em;
+}
+
+div.tablaProceso .tablaProceso__tr .tablaProceso__td img {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+div.tablaProceso .tablaProceso__tr .tablaProceso__td--subtitulo {
+  padding: 1em;
+  height: 5rem;
+  text-align: center;
+  color: #32353B;
+  font-weight: bolder;
+  border-top: solid grey 0.05rem;
+  border-bottom: solid grey 0.05rem;
+}
+
+div.tablaProceso .tablaProceso__tr .tablaProceso__td--lista {
+  padding: 1rem;
+  height: 17vw;
+  text-align: justify;
+  list-style-position: inside;
+  color: #4D6257;
+  font-size: 0.8em;
+}
+
+div.nosotros {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+div.nosotros section.video iframe {
+  width: 100%;
+}
+
+section.productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+section.productos div.categorias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+section.productos div.categorias div.scale {
+  padding: 3rem;
+}
+
+section.productos div.categorias div.scale img {
+  width: 20rem;
+}
+
+section.productos div.categorias div.scale:hover {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-text-decoration: underline solid;
+          text-decoration: underline solid;
+}
+
+@media only screen and (min-width: 600px) {
+  div.tablaProceso {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "etapa0 etapa1" "etapa2 etapa3";
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .explicativo {
+    line-height: 2.5rem;
+  }
+  div.tablaProceso {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "etapa0 etapa1 etapa2 etapa3";
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  div.nosotros section.video iframe {
+    width: 100%;
+    height: 500px;
+  }
+  section.productos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  section.productos div.categorias {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  section.productos div.categorias div.scale {
+    padding: 3rem;
+  }
+  section.productos div.categorias div.scale img {
+    width: 15rem;
+  }
+  section.productos div.categorias div.scale:hover {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-text-decoration: underline solid;
+            text-decoration: underline solid;
+  }
+}
+
+footer {
+  font-size: 1rem;
+}
+
+footer div.row div {
+  padding: 0;
+}
+
+footer div.row div .datos {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#BEB265), color-stop(#dbb078), to(#D0995B));
+  background-image: linear-gradient(#BEB265, #dbb078, #D0995B);
+  border: groove #4D6257 0.5rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer div.row div .cajaFormulario {
+  width: 100%;
+  height: 100%;
+  border: groove #4D6257 0.5rem;
+  padding: 1em;
+}
+
+footer div.row div .cajaFormulario label {
+  color: #32353B;
+}
+
+footer div.row div .cajaFormulario label a {
+  font-weight: bolder;
+  color: #BEB265;
+}
+
+footer div.row div .cajaFormulario div.form-check {
+  padding-left: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding-top: 3rem;
+  width: 95%;
+  height: 100%;
+  margin: 2%;
+  font-size: 1rem;
+  font-family: 'Nunito sans', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  color: #BEB265;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  background-color: #E8E4E1;
+  font-size: 2rem;
+}
+
+h3 {
+  text-align: left;
+  color: #dbb078;
+  font-size: 1.5rem;
+}
+
+h4 {
+  color: #32353B;
+  font-size: 1.5rem;
+}
+
+h5 {
+  color: #32353B;
+  font-size: 1.25rem;
+}
+
+p {
+  color: #4D6257;
+}
+/*# sourceMappingURL=style.css.map */

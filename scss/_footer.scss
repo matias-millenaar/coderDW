@@ -1,0 +1,35 @@
+footer{
+    font-size: 1rem;
+    div.row{
+        div{
+            padding: 0;
+            .datos{
+                width: 100%;
+                height: 100%;
+                padding: 1em;
+                background-image: linear-gradient($dorado, $marron_c, $marron_f);
+                border: groove $verde_o 0.5rem;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .cajaFormulario{
+                width: 100%;
+                height: 100%;
+                border: groove $verde_o 0.5rem;
+                padding: 1em;
+                label{
+                    color: $onyx;
+                    a{
+                        font-weight: bolder;
+                        color: $dorado;
+                    }
+                }
+                div.form-check{
+                    padding-left: 2rem;
+                }
+            }
+        }
+    }
+}

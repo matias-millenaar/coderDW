@@ -1,0 +1,47 @@
+@import"color";
+@import"header";
+@import"main";
+@import"footer";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding-top: 3rem;
+    width: 95%;
+    height: 100%;
+    margin: 2%;
+    font-size: 1rem;
+    font-family: 'Nunito sans', sans-serif;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color: $dorado;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration:underline;
+    background-color: $platinum;
+    font-size: 2rem;
+}
+h3{
+    text-align: left;
+    color: $marron_c;
+    font-size: 1.5rem;
+}
+h4{
+    color: $onyx;
+    font-size: 1.5rem;
+}
+h5{
+    color: $onyx;
+    font-size: 1.25rem;
+}
+p{
+    color: $verde_o;
+}
