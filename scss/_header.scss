@@ -1,4 +1,17 @@
-.nav-item:hover{
-    background-color: $marron_c;
-    font-weight: bolder;
+header{
+    nav{
+        .nav-item:hover{
+        background-color: $marron_c;
+        font-weight: bolder;
+        }
+        .redesNav{
+            .nav-item{
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+            .nav-item:hover{
+                background-color: inherit;
+            }
+        }
+    }
 }

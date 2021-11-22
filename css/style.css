@@ -1,19 +1,24 @@
-.nav-item:hover {
+header nav .nav-item:hover {
   background-color: #dbb078;
   font-weight: bolder;
 }
 
-.explicativo {
-  text-align: justify;
-  line-height: 2rem;
+header nav .redesNav .nav-item {
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
-section.fotoPrincipal {
+header nav .redesNav .nav-item:hover {
+  background-color: inherit;
+}
+
+main section.fotoPrincipal {
   width: 100%;
   height: 700px;
   background-image: url(../media/conejito.jpeg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "p1 logo p2" "titulo titulo titulo" "p3 p3 p3" "p4 p4 p4";
@@ -27,7 +32,7 @@ section.fotoPrincipal {
   justify-items: center;
 }
 
-section.fotoPrincipal .fotoPrincipal__titulo {
+main section.fotoPrincipal .fotoPrincipal__titulo {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -37,62 +42,63 @@ section.fotoPrincipal .fotoPrincipal__titulo {
   font-weight: bolder;
 }
 
-section.fotoPrincipal .fotoPrincipal__logo {
+main section.fotoPrincipal .fotoPrincipal__logo {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: logo;
   width: 10vw;
 }
 
-section.fotoPrincipal .fotoPrincipal__p1 {
+main section.fotoPrincipal .fotoPrincipal__p1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: p1;
   color: white;
-  font-size: 2.5vw;
+  font-size: 5vw;
   font-weight: bolder;
   -ms-grid-column-align: right;
       justify-self: right;
 }
 
-section.fotoPrincipal .fotoPrincipal__p2 {
+main section.fotoPrincipal .fotoPrincipal__p2 {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: p2;
   color: white;
-  font-size: 2.5vw;
+  font-size: 5vw;
   font-weight: bolder;
   -ms-grid-column-align: left;
       justify-self: left;
 }
 
-section.fotoPrincipal .fotoPrincipal__p3 {
+main section.fotoPrincipal .fotoPrincipal__p3 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: p3;
   color: white;
-  font-size: 1.5vw;
+  font-size: 4vw;
   font-weight: bold;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
 }
 
-section.fotoPrincipal .fotoPrincipal__p4 {
+main section.fotoPrincipal .fotoPrincipal__p4 {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: p4;
   color: white;
-  font-size: 1.5vw;
+  font-size: 4vw;
   font-weight: bold;
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
+  text-align: center;
 }
 
-div.tablaProceso {
+main div.tablaProceso {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "etapa0" "etapa1" "etapa2" "etapa3";
@@ -107,52 +113,52 @@ div.tablaProceso {
           justify-content: center;
 }
 
-div.tablaProceso .tablaProceso__etapa0 {
+main div.tablaProceso .tablaProceso__etapa0 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: etapa0;
 }
 
-div.tablaProceso .tablaProceso__etapa1 {
+main div.tablaProceso .tablaProceso__etapa1 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: etapa1;
 }
 
-div.tablaProceso .tablaProceso__etapa2 {
+main div.tablaProceso .tablaProceso__etapa2 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: etapa2;
 }
 
-div.tablaProceso .tablaProceso__etapa3 {
+main div.tablaProceso .tablaProceso__etapa3 {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: etapa3;
 }
 
-div.tablaProceso .tablaProceso__tr .tablaProceso__th {
+main div.tablaProceso .tablaProceso__tr .tablaProceso__th {
   background-color: #E8E4E1;
   height: 2.5rem;
   text-align: center;
   border: solid black 0.1rem;
 }
 
-div.tablaProceso .tablaProceso__tr .tablaProceso__td ol {
+main div.tablaProceso .tablaProceso__tr .tablaProceso__td ol {
   padding-left: 1em;
 }
 
-div.tablaProceso .tablaProceso__tr .tablaProceso__td ul {
+main div.tablaProceso .tablaProceso__tr .tablaProceso__td ul {
   padding-left: 1em;
 }
 
-div.tablaProceso .tablaProceso__tr .tablaProceso__td img {
+main div.tablaProceso .tablaProceso__tr .tablaProceso__td img {
   width: 100%;
   height: auto;
   padding: 1rem;
 }
 
-div.tablaProceso .tablaProceso__tr .tablaProceso__td--subtitulo {
+main div.tablaProceso .tablaProceso__tr .tablaProceso__td--subtitulo {
   padding: 1em;
   height: 5rem;
   text-align: center;
@@ -162,7 +168,7 @@ div.tablaProceso .tablaProceso__tr .tablaProceso__td--subtitulo {
   border-bottom: solid grey 0.05rem;
 }
 
-div.tablaProceso .tablaProceso__tr .tablaProceso__td--lista {
+main div.tablaProceso .tablaProceso__tr .tablaProceso__td--lista {
   padding: 1rem;
   height: 17vw;
   text-align: justify;
@@ -171,7 +177,7 @@ div.tablaProceso .tablaProceso__tr .tablaProceso__td--lista {
   font-size: 0.8em;
 }
 
-div.nosotros {
+main section.nosotros {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -183,11 +189,11 @@ div.nosotros {
           flex-flow: column nowrap;
 }
 
-div.nosotros section.video iframe {
+main section.nosotros div.video iframe {
   width: 100%;
 }
 
-section.productos {
+main section.productos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,7 +203,7 @@ section.productos {
           flex-flow: column nowrap;
 }
 
-section.productos div.categorias {
+main section.productos div.categorias {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,25 +220,117 @@ section.productos div.categorias {
   text-align: center;
 }
 
-section.productos div.categorias div.scale {
-  padding: 3rem;
+main section.productos div.categorias div.carousel-caption {
+  background-color: lightgray;
+  opacity: 0.5;
 }
 
-section.productos div.categorias div.scale img {
-  width: 20rem;
+main section.productos div.categorias div.carousel-caption h6 {
+  color: black;
+  font-size: large;
 }
 
-section.productos div.categorias div.scale:hover {
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-text-decoration: underline solid;
-          text-decoration: underline solid;
+main section.productos div.categorias div.carousel button.carousel-control-prev span {
+  background-color: lightgray;
 }
 
-@media only screen and (min-width: 600px) {
-  div.tablaProceso {
+main section.productos div.categorias div.carousel button.carousel-control-next span {
+  background-color: lightgray;
+}
+
+main section.productos div.categorias div.carousel .carousel-indicators {
+  background-color: yellow;
+}
+
+main section.preguntas div.accordion .accordion-button {
+  background-color: #fff4eb;
+  opacity: 0.5;
+}
+
+main section.preguntas div.accordion .accordion-button:hover {
+  opacity: 1;
+  background-color: #ffddc1;
+  border: 1px solid black;
+}
+
+main section.preguntas div.accordion .accordion-button:hover h5 {
+  font-size: 1.25rem;
+}
+
+main section.pageNotFound {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main section.pageNotFound img {
+  width: 100%;
+  height: auto;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+main section.pageNotFound .texto404 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+  main section.fotoPrincipal .fotoPrincipal__p1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: p1;
+    color: white;
+    font-size: 3vw;
+    font-weight: bolder;
+    -ms-grid-column-align: right;
+        justify-self: right;
+  }
+  main section.fotoPrincipal .fotoPrincipal__p2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: p2;
+    color: white;
+    font-size: 3vw;
+    font-weight: bolder;
+    -ms-grid-column-align: left;
+        justify-self: left;
+  }
+  main section.fotoPrincipal .fotoPrincipal__p3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: p3;
+    color: white;
+    font-size: 2.5vw;
+    font-weight: bold;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+  main section.fotoPrincipal .fotoPrincipal__p4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: p4;
+    color: white;
+    font-size: 2.5vw;
+    font-weight: bold;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  main div.tablaProceso {
     display: -ms-grid;
     display: grid;
         grid-template-areas: "etapa0 etapa1" "etapa2 etapa3";
@@ -241,13 +339,65 @@ section.productos div.categorias div.scale:hover {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
+  main section.productos div.carousel {
+    width: 500px;
+    height: 500px;
+  }
+  main section.pageNotFound img {
+    padding-left: 25vw;
+    padding-right: 25vw;
+  }
+  main section.pageNotFound .texto404 {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (min-width: 992px) {
-  .explicativo {
-    line-height: 2.5rem;
+  main section.fotoPrincipal .fotoPrincipal__p1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: p1;
+    color: white;
+    font-size: 2.5vw;
+    font-weight: bolder;
+    -ms-grid-column-align: right;
+        justify-self: right;
   }
-  div.tablaProceso {
+  main section.fotoPrincipal .fotoPrincipal__p2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: p2;
+    color: white;
+    font-size: 2.5vw;
+    font-weight: bolder;
+    -ms-grid-column-align: left;
+        justify-self: left;
+  }
+  main section.fotoPrincipal .fotoPrincipal__p3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: p3;
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+  main section.fotoPrincipal .fotoPrincipal__p4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: p4;
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  main div.tablaProceso {
     display: -ms-grid;
     display: grid;
         grid-template-areas: "etapa0 etapa1 etapa2 etapa3";
@@ -256,48 +406,24 @@ section.productos div.categorias div.scale:hover {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  div.nosotros section.video iframe {
+  main section.nosotros div.video iframe {
     width: 100%;
     height: 500px;
   }
-  section.productos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
+  main section.productos div.categorias div.carousel {
+    width: 600px;
+    height: 600px;
   }
-  section.productos div.categorias {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
+  main section.productos div.categorias #carouselExampleCaptions1 {
+    width: 800px;
+    height: 700px;
   }
-  section.productos div.categorias div.scale {
-    padding: 3rem;
+  main section.pageNotFound img {
+    padding-left: 30vw;
+    padding-right: 30vw;
   }
-  section.productos div.categorias div.scale img {
-    width: 15rem;
-  }
-  section.productos div.categorias div.scale:hover {
-    -webkit-transition: all 1s;
-    transition: all 1s;
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-    -webkit-text-decoration: underline solid;
-            text-decoration: underline solid;
+  main section.pageNotFound .texto404 {
+    font-size: 2rem;
   }
 }
 
@@ -327,6 +453,15 @@ footer div.row div .datos {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+footer div.row div .datos iframe {
+  width: auto;
+  height: 40vh;
+}
+
+footer div.row div .datos div.rrss a {
+  padding: 2vh;
 }
 
 footer div.row div .cajaFormulario {
@@ -365,11 +500,11 @@ body {
   font-family: 'Nunito sans', sans-serif;
 }
 
-h1 {
+body h1 {
   text-align: center;
 }
 
-h2 {
+body h2 {
   text-align: center;
   color: #BEB265;
   font-style: italic;
@@ -379,23 +514,28 @@ h2 {
   font-size: 2rem;
 }
 
-h3 {
+body h3 {
   text-align: left;
   color: #dbb078;
   font-size: 1.5rem;
 }
 
-h4 {
+body h4 {
   color: #32353B;
   font-size: 1.5rem;
 }
 
-h5 {
+body h5 {
   color: #32353B;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
-p {
+body p {
   color: #4D6257;
+}
+
+body .explicativo {
+  text-align: justify;
+  line-height: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
