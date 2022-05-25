@@ -1,2 +1,2 @@
 # coderDW
-Proyecto DESARROLLO WEB en CoderHouse
+CoderHouse's HTML & CSS course final project
