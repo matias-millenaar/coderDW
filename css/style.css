@@ -18,7 +18,7 @@ main section.fotoPrincipal {
   background-image: url(../media/conejito.jpeg);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "p1 logo p2" "titulo titulo titulo" "p3 p3 p3" "p4 p4 p4";
@@ -286,6 +286,9 @@ main section.pageNotFound .texto404 {
 }
 
 @media only screen and (min-width: 600px) and (max-width: 991px) {
+  main section.fotoPrincipal {
+    background-attachment: fixed;
+  }
   main section.fotoPrincipal .fotoPrincipal__p1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -353,6 +356,9 @@ main section.pageNotFound .texto404 {
 }
 
 @media only screen and (min-width: 992px) {
+  main section.fotoPrincipal {
+    background-attachment: fixed;
+  }
   main section.fotoPrincipal .fotoPrincipal__p1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
