@@ -468,6 +468,7 @@ footer div.row div .datos iframe {
 
 footer div.row div .datos div.rrss a {
   padding: 2vh;
+  text-decoration: none;
 }
 
 footer div.row div .cajaFormulario {
